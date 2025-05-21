@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f8;
-    padding: 18px;
+    padding: 20px; /* Puedes considerar quitar este padding si el body de Bootstrap ya te da el espaciado deseado */
     color: #333;
 }
 
@@ -16,4 +16,43 @@ a {
 
 ul {
     list-style-type: square;
+}
+
+/* --- Nuevos estilos para la carga de imagen (añadidos aquí) --- */
+.form-label {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.btn-upload {
+    background-color: #007bff; /* Color azul primario de Bootstrap */
+    border-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.btn-upload:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.preview-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #dee2e6;
+    display: none; /* Oculto por defecto */
+}
+.file-name {
+    margin-top: 10px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+.img-fluid.rounded {
+    max-width: 300px; /* Limita el tamaño de la imagen mostrada del servidor */
+    height: auto;
+    display: block; /* Para centrar la imagen */
+    margin-left: auto;
+    margin-right: auto;
 }
